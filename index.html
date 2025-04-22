@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz App</title>
-</head>
-<body>
-    <p>lorem</p>
-    <div>text</div>
+  </head>
+  <body>
+    <div class="quiz-app">
+      <div class="quiz-titel">
+        <h3>awesome quiz application</h3>
+        <div class="countdown">time left <span>25</span></div>
+      </div>
+      <div class="question">
+        <h2>wat does HTML stand for ?</h2>
+      </div>
+      <div class="answers-box">
+        <div class="answer">
+          <input type="radio" id="answer-1" checked />
+          <label for="answer-1">stand for question number</label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer-2" />
+          <label for="answer-2">question for number stand</label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer-3" />
+          <label for="answer-3">for stand question number</label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer-4" />
+          <label for="answer-4">number stand for question </label>
+        </div>
+      </div>
+      <button class="btn">submit answer</button>
+      <div class="result">
+        <div class="q-number">question : <span>5</span></div>
+        <div class="notaition">
+            <span class="done"></span>
+            <span class="done"></span>
+            <span class="done"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="progres">score 9 from 10</div>
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

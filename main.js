@@ -7,8 +7,11 @@ let questionDiv = document.querySelector(".question"),
   questionSpan = document.querySelector(".q-number span"),
   progres = document.querySelector(".progres .score-1"),
   quizApp = document.querySelector(".quiz-app"),
-  countDown = document.querySelector(".countdown span");
-(currentquestion = 0), (rightAnswers = 0), (question = 1), countdownInterval;
+  countDown = document.querySelector(".countdown span"),
+currentquestion = 0,
+rightAnswers = 0,
+question = 1,
+countdownInterval;
 
 async function getData() {
   const response = await fetch("data.josn");

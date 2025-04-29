@@ -8,11 +8,12 @@ let questionDiv = document.querySelector(".question"),
   progres = document.querySelector(".progres .score-1"),
   quizApp = document.querySelector(".quiz-app"),
   countDown = document.querySelector(".countdown span"),
-currentquestion = 0,
-rightAnswers = 0,
-question = 1,
-countdownInterval;
+  currentquestion = 0,
+  rightAnswers = 0,
+  question = 1,
+  countdownInterval;
 
+// function to fetch data from json file
 async function getData() {
   const response = await fetch("data.josn");
   const data = await response.json();
@@ -21,12 +22,10 @@ async function getData() {
   createBullets(qNumber);
   addData(data[currentquestion], qNumber);
   countdown(10, qNumber);
-
   submitAnswer.onclick = () => {
     let rightAnswer = data[currentquestion].answer;
     currentquestion++;
     checkAnswer(rightAnswer, qNumber);
-
     questionDiv.innerHTML = "";
     answersBox.innerHTML = "";
     addData(data[currentquestion], qNumber);
@@ -40,6 +39,7 @@ async function getData() {
 }
 getData();
 
+// create span bullets
 function createBullets(num) {
   totalQuestions.innerHTML = num;
   for (let i = 0; i < 10; i++) {
@@ -51,6 +51,7 @@ function createBullets(num) {
   }
 }
 
+// add data to object
 function addData(obj, count) {
   if (currentquestion < count) {
     let question = document.createElement("h2"),
@@ -59,8 +60,10 @@ function addData(obj, count) {
     questionDiv.appendChild(question);
 
     for (i = 1; i <= 4; i++) {
+      // create answers div
       let answers = document.createElement("div");
       answers.className = "answer";
+      // create answers input
       let input = document.createElement("input");
       input.name = "question";
       input.type = "radio";
@@ -69,7 +72,7 @@ function addData(obj, count) {
       if (i === 1) {
         input.checked = true;
       }
-
+      // create answers label
       let label = document.createElement("label"),
         labelText = document.createTextNode(obj[`answer-${i}`]);
       label.htmlFor = `answer-${i}`;
@@ -81,6 +84,7 @@ function addData(obj, count) {
   }
 }
 
+//check answers
 function checkAnswer(rAnswer, count) {
   let answers = document.getElementsByName("question");
   let theChoosenAnswer;
@@ -105,6 +109,7 @@ function handleBullets() {
   });
 }
 
+// to show results
 function showResults(count) {
   let theResults;
   if (currentquestion === count) {
@@ -115,16 +120,16 @@ function showResults(count) {
     let result = document.createElement("div");
     result.className = "result";
 
-    if (rightAnswers > (count / 2) && rightAnswers < count) {
+    if (rightAnswers > count / 2 && rightAnswers < count) {
       theResults = `<span> Good Yor Score is </span>${rightAnswers} We hope you had fun ✅`;
-    }else {
+    } else {
       theResults = `<span>Yor Score is </span>${rightAnswers} Keep challenging yourself learning never stops!`;
     }
     result.innerHTML = theResults;
     quizApp.appendChild(result);
   }
 }
-
+//count time
 function countdown(duration, count) {
   if (currentquestion < count) {
     let seconds;

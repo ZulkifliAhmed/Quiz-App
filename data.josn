@@ -1,1 +1,92 @@
- 
+[
+    {
+        "question" : "What is the purpose of the <a> tag in HTML?",
+        
+            "answer-1" : "Add a paragraph",
+            "answer-2" : "Create a table",
+            "answer-3" : "Create a link",
+            "answer-4" : "Display an image",
+            "answer" : "Create a link"
+    },
+    {
+        "question" : "Which CSS property is used to change the text color?",
+        
+            "answer-1" : "text-align",
+            "answer-2" : "color",
+            "answer-3" : "font-size",
+            "answer-4" : "background-color",
+            "answer" : "color"
+    },
+    {
+        "question" : "What is the correct HTML tag to insert an image?",
+        
+            "answer-1" : "<src>",
+            "answer-2" : "<pic>",
+            "answer-3" : "<image>",
+            "answer-4" : "<img>",
+            "answer" : "<img>"
+    },
+    {
+        "question" : "How do you make text bold in HTML?",
+        
+            "answer-1" : "<stronger>",
+            "answer-2" : "<u>",
+            "answer-3" : "<b>",
+            "answer-4" : "<i>",
+            "answer" : "<b>"
+    },
+    {
+        "question" : "Which CSS property is used to change the font of an element?",
+        
+            "answer-1" : "font-style",
+            "answer-2" : "text-decoration",
+            "answer-3" : "font-family",
+            "answer-4" : "font-weight",
+            "answer" : "font-family"
+    },
+    {
+        "question" : "Which CSS rule centers text horizontally inside an element?",
+        
+            "answer-1" : " align-center",
+            "answer-2" : "text-align: center",
+            "answer-3" : " center-align",
+            "answer-4" : "justify-content: center",
+            "answer" : "text-align: center"
+    },
+    {
+        "question" : "What is the correct file extension for a CSS file?",
+        
+            "answer-1" : ".css",
+            "answer-2" : ".scss",
+            "answer-3" : ".js",
+            "answer-4" : ".html",
+            "answer" : ".css"
+    },
+    {
+        "question" : "Which HTML tag is used to create an unordered list?",
+        
+            "answer-1" : " <list>",
+            "answer-2" : "<ul>",
+            "answer-3" : "<li>",
+            "answer-4" : " <ol>",
+            "answer" : "<ul>"
+    },
+    {
+        "question" : "In CSS, which property is used to add space inside an element’s border?",
+        
+            "answer-1" : "spacing",
+            "answer-2" : "border",
+            "answer-3" : "padding",
+            "answer-4" : "margin",
+            "answer" : "padding"
+    },
+    {
+        "question" : "What does HTML stand for?",
+        
+            "answer-1" : "Home Tool Markup Language",
+            "answer-2" : "High Text Machine Language",
+            "answer-3" : "Hyper Text Markup Language",
+            "answer-4" : "Hyper Trainer Marking Language",
+            "answer" : "Hyper Text Markup Language"
+    }
+]

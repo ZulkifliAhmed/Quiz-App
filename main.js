@@ -115,12 +115,10 @@ function showResults(count) {
     let result = document.createElement("div");
     result.className = "result";
 
-    if (rightAnswers > count / 2 && rightAnswers < count) {
-      theResults = `<span>Good Yor Score is </span>${rightAnswers}`;
-    } else if (rightAnswers === count) {
-      theResults = `<span>him Yor Score is </span>${rightAnswers}`;
-    } else {
-      theResults = `<span>bad Yor Score is </span>${rightAnswers}`;
+    if (rightAnswers > (count / 2) && rightAnswers < count) {
+      theResults = `<span> Good Yor Score is </span>${rightAnswers} We hope you had fun ✅`;
+    }else {
+      theResults = `<span>Yor Score is </span>${rightAnswers} Keep challenging yourself learning never stops!`;
     }
     result.innerHTML = theResults;
     quizApp.appendChild(result);

@@ -36,18 +36,20 @@ body{
 }
 .quiz-app .question h2{
     padding: 12px 0;
-    text-transform: capitalize;
 }
 .quiz-app .answers-box .answer{
     padding: 10px 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    text-transform: capitalize;
     border: 1px solid #efefef;
     background-color: #0076f505;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.quiz-app .answers-box .answer label{
+    width: 100%;
+    cursor: pointer;
 }
 .quiz-app .btn{
     display: block;
@@ -63,7 +65,7 @@ body{
     background-color: #0077f5;
     cursor: pointer;
 }
-.quiz-app .result{
+.quiz-app .score{
     padding: 15px;
     border-radius: 5px;
     display: flex;
@@ -82,9 +84,14 @@ body{
     padding: 8px;
     border-radius: 50%;
     background-color: #0076f53e;
-    cursor: pointer;
+    cursor: default;
 }
 .quiz-app .notaition span.done{
     background-color: #0076f5;
 }
+.quiz-app .result{
+    padding: 50px;
+    text-align: center;
+}
+
  
